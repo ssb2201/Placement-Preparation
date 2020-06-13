@@ -26,6 +26,9 @@ Explanation:
 Testcase 1: Given string ABC has permutations in 6 forms as ABC, ACB, BAC, BCA, CAB and CBA .
 */
 
+
+//solution 1
+
 import java.util.*;
 import java.lang.*;
 import java.io.*;
@@ -63,3 +66,5 @@ class GFG {
 	    }
 	}
 }
+
+

@@ -70,3 +70,32 @@ class Tree
     
     
 }
+
+//sol 2
+class Tree
+{
+    // Return a list containing the inorder traversal of the given tree
+    ArrayList<Integer> inOrder(Node root)
+    {
+        // Code
+        ArrayList<Integer> a = new ArrayList<>();
+        
+        inordert(root,a);
+        
+        return a;
+    }
+    
+    void inordert(Node node,ArrayList<Integer> a)
+    {
+        if(node==null)
+        {
+            return;
+        }
+        
+        inordert(node.left,a);
+        a.add(node.data);
+        inordert(node.right,a);
+    }
+    
+    
+}
